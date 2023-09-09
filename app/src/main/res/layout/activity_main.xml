@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.main.MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNav"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/_204_w037_n003_316b_p1_316" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="toSearch"
+                    android:layout_weight="1"
+                    app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
+
+                <EditText
+                    android:id="@+id/txtSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:ems="10"
+                    android:hint="Tìm kiếm nhanh..."
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtMainSubj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:text="CÁC MÔN HỌC"
+                android:textColor="@color/design_default_color_primary"
+                android:textStyle="bold" />
+
+            <androidx.constraintlayout.motion.widget.MotionLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:layoutDescription="@xml/activity_main_scene">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardCar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgCar1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="8"
+                            app:srcCompat="@drawable/subject" />
+
+                        <TextView
+                            android:id="@+id/txtCar1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:text="Kinh tế vi mô"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardCar2"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgCar2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="8"
+                            app:srcCompat="@drawable/subject2" />
+
+                        <TextView
+                            android:id="@+id/txtCar2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:text="Hệ thống thông tin quản lý"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardCar3"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgCar3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="8"
+                            app:srcCompat="@drawable/subject3" />
+
+                        <TextView
+                            android:id="@+id/txtCar3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:text="Vật lý đại cương"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardCar4"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgCar4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="8"
+                            app:srcCompat="@drawable/subject4" />
+
+                        <TextView
+                            android:id="@+id/txtCar4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:text="Nhập môn công nghệ thông tin"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardCar5"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imgCar5"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="8"
+                            app:srcCompat="@drawable/subject5" />
+
+                        <TextView
+                            android:id="@+id/txtCar5"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:text="Xác suất thống kê"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.constraintlayout.helper.widget.Carousel
+                    android:id="@+id/carousel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:carousel_backwardTransition="@+id/backward"
+                    app:carousel_emptyViewsBehavior="gone"
+                    app:carousel_firstView="@+id/cardCar1"
+                    app:carousel_forwardTransition="@+id/forward"
+                    app:carousel_infinite="true"
+                    app:carousel_nextState="@+id/next"
+                    app:carousel_previousState="@+id/previous"
+                    app:constraint_referenced_ids="cardCar5,cardCar4,cardCar3,cardCar2,cardCar1" />
+
+            </androidx.constraintlayout.motion.widget.MotionLayout>
+
+            <TextView
+                android:id="@+id/txtChucNang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:text="ỨNG DỤNG"
+                android:textColor="@color/design_default_color_primary"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="32dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4"
+                        android:onClick="toSubjectList"
+                        app:srcCompat="@drawable/tracnghiem" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Trắc nghiệm"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4"
+                        android:onClick="toSchedule"
+                        android:padding="12dp"
+                        app:srcCompat="@drawable/schedule" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Thời khóa biểu"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4"
+                        android:onClick="toDocContri"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/email_doc" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Đóng góp tài liệu"
+                        android:textAlignment="center" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

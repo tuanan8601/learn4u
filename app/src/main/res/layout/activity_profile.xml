@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ProfileActivity">
+
+    <TextView
+        android:id="@+id/txtDoB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:ems="10"
+        android:text="Enter your date of birth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLabelDoB" />
+
+    <EditText
+        android:id="@+id/txtDisplayName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Enter your display name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLabelDN" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLabelEmail" />
+
+    <EditText
+        android:id="@+id/txtUni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Enter your university"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLabelUni" />
+
+    <EditText
+        android:id="@+id/txtPhoneNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Enter your phone number"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLabelPhone" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="editProfile"
+        android:text="Lưu thông tin"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/txtPhoneNum"
+        app:layout_constraintTop_toBottomOf="@+id/txtPhoneNum" />
+
+    <TextView
+        android:id="@+id/txtTitleProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Thông tin cá nhân"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtLabelDN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/design_default_color_primary"
+        android:text="Display name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleProfile" />
+
+    <TextView
+        android:id="@+id/txtLabelEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/design_default_color_primary"
+        android:text="Email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDisplayName" />
+
+    <TextView
+        android:id="@+id/txtLabelDoB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/design_default_color_primary"
+        android:text="Date of birth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+    <TextView
+        android:id="@+id/txtLabelUni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/design_default_color_primary"
+        android:text="University"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDoB" />
+
+    <TextView
+        android:id="@+id/txtLabelPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Phone num"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUni" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu"/>
+
+    <ImageButton
+        android:id="@+id/btnDN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="@+id/txtDisplayName"
+        app:layout_constraintTop_toTopOf="@+id/txtDisplayName"
+        app:srcCompat="@drawable/edit_icon" />
+
+    <ImageButton
+        android:id="@+id/btnEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="@+id/txtEmail"
+        app:layout_constraintTop_toTopOf="@+id/txtEmail"
+        app:srcCompat="@drawable/edit_icon" />
+
+    <ImageButton
+        android:id="@+id/btnDoB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="@+id/txtDoB"
+        app:layout_constraintTop_toTopOf="@+id/txtDoB"
+        app:srcCompat="@drawable/edit_icon" />
+
+    <ImageButton
+        android:id="@+id/btnUni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="@+id/txtUni"
+        app:layout_constraintTop_toTopOf="@+id/txtUni"
+        app:srcCompat="@drawable/edit_icon" />
+
+    <ImageButton
+        android:id="@+id/btnPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="@+id/txtPhoneNum"
+        app:layout_constraintTop_toTopOf="@+id/txtPhoneNum"
+        app:srcCompat="@drawable/edit_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

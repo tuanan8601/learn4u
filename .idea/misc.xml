@@ -1,0 +1,56 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/drawable-v24/border.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/drawable-v24/button_af.xml" value="0.1" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/drawable-v24/button_bf.xml" value="0.2085" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2085" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/drawable-xxhdpi/border_top_bottom.xml" value="0.1295" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/drawable/button_curr.xml" value="0.113" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/drawable/ic_baseline_apps_24.xml" value="0.178" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/drawable/ic_baseline_apps_24_white.xml" value="0.178" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/drawable/ic_baseline_history_edu_24.xml" value="0.1295" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1295" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/drawable/ic_baseline_login_24.xml" value="0.1295" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1295" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2085" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/drawable/table_border.xml" value="0.152" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/layout/activity_chapter.xml" value="0.234375" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/layout/activity_doc_contribution.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/layout/activity_login.xml" value="0.32407407407407407" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/layout/activity_profile.xml" value="0.264" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/layout/activity_schedule.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/layout/activity_search.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/layout/activity_signup.xml" value="0.264" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/layout/activity_start_screen.xml" value="0.264" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/layout/activity_subject.xml" value="0.234375" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/layout/activity_test_form.xml" value="0.264" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/layout/activity_test_result.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/layout/activity_user_test_result.xml" value="0.25885416666666666" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/layout/answer_item.xml" value="0.2046875" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/layout/border.xml" value="0.14628623188405798" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/layout/chapter_item.xml" value="0.264" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/layout/fragment_answer_list.xml" value="0.22554347826086957" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/layout/fragment_schedule_dialog.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/layout/main_subject_item.xml" value="0.264" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/layout/result_item.xml" value="0.264" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/layout/subject_item.xml" value="0.25" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/layout/test_result_item.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/menu/bottom_nav_menu.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/menu/main_menu.xml" value="0.4" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/menu/menu_main.xml" value="0.25885416666666666" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.112" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.112" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/QuestAns/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.xml" value="0.112" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

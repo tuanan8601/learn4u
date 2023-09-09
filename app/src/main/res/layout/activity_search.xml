@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SearchActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="search"
+            app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
+
+        <EditText
+            android:id="@+id/txtSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:ems="10"
+            android:hint="Tìm kiếm nhanh..."
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSearchTitle"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <RadioGroup
+        android:id="@+id/searchOptGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="121dp">
+
+        <RadioButton
+            android:id="@+id/optSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tìm kiếm môn học"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/optChapter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tìm kiếm trong chương" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtSearchTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Kết quả tìm kiếm từ khóa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchOptGroup" />
+
+    <TextView
+        android:id="@+id/txtNotFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/incorrect"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/searchRecyclerView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.schedule.ScheduleActivity"
+    android:id="@+id/scheduleLayout">
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:background="@drawable/table_border_white"
+                android:id="@+id/txtCa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Ca" />
+
+            <TextView
+                android:background="@drawable/table_border_white"
+                android:id="@+id/txtT2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="T2"
+                android:textAlignment="center" />
+
+            <TextView
+                android:background="@drawable/table_border_white"
+                android:id="@+id/txtT3"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="T3"
+                android:textAlignment="center" />
+
+            <TextView
+                android:background="@drawable/table_border_white"
+                android:id="@+id/txtT4"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="T4"
+                android:textAlignment="center" />
+
+            <TextView
+                android:background="@drawable/table_border_white"
+                android:id="@+id/txtT5"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="T5"
+                android:textAlignment="center" />
+
+            <TextView
+                android:background="@drawable/table_border_white"
+                android:id="@+id/txtT6"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="T6"
+                android:textAlignment="center" />
+
+            <TextView
+                android:background="@drawable/table_border_white"
+                android:id="@+id/txtT7"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="T7"
+                android:textAlignment="center" />
+
+            <TextView
+                android:background="@drawable/table_border_white"
+                android:id="@+id/txtCN"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="CN"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/txtSang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="#66A0CF"
+                android:textStyle="bold"
+                android:text="Buổi sáng" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtCa1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="1" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT2C1"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable"/>
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT3C1"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT4C1"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT5C1"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT6C1"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT7C1"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtCNC1"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtCa2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="2" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT2C2"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT3C2"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT4C2"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT5C2"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT6C2"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT7C2"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtCNC2"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtCa3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="3" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT2C3"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT3C3"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT4C3"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT5C3"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT6C3"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT7C3"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtCNC3"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtCa4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="4" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT2C4"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT3C4"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT4C4"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT5C4"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT6C4"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT7C4"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtCNC4"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/txtChieu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="#66A0CF"
+                android:textStyle="bold"
+                android:text="Buổi chiều" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtCa5"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="5" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT2C5"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT3C5"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT4C5"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT5C5"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT6C5"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT7C5"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtCNC5"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtCa6"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="6" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT2C6"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT3C6"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT4C6"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT5C6"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT6C6"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT7C6"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtCNC6"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtCa7"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="7" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT2C7"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT3C7"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT4C7"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT5C7"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT6C7"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT7C7"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtCNC7"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtCa8"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="8" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT2C8"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT3C8"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT4C8"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT5C8"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT6C8"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT7C8"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtCNC8"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/txtToi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="#66A0CF"
+                android:textStyle="bold"
+                android:text="Buổi tối" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtCa9"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="9" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT2C9"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT3C9"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT4C9"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT5C9"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT6C9"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT7C9"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtCNC9"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtCa10"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="10" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT2C10"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT3C10"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT4C10"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT5C10"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT6C10"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtT7C10"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable" />
+
+            <TextView
+                android:background="@drawable/table_border"
+                android:id="@+id/txtCNC10"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:text=""
+                android:onClick="editTable"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:onClick="stopDaily"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

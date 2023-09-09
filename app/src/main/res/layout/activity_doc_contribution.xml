@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DocContributionActivity">
+
+    <TextView
+        android:id="@+id/txtDocConTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Đóng góp tài liệu"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtEmailContent"
+        android:layout_width="379dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:hint="Enter your message..."
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDocConTitle"
+        android:background="@drawable/border"/>
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Gửi tài liệu"
+        android:textAllCaps="false"
+        android:onClick="sendEmail"
+        app:layout_constraintEnd_toEndOf="@+id/txtEmailContent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailContent" />
+
+    <ImageButton
+        android:id="@+id/btnFileUpload"
+        android:layout_width="49dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:onClick="uploadFile"
+        app:layout_constraintStart_toStartOf="@+id/txtEmailContent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailContent"
+        app:srcCompat="@drawable/doccon_icon" />
+
+    <TextView
+        android:id="@+id/txtLabelFileUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đính kèm file"
+        app:layout_constraintStart_toStartOf="@+id/btnFileUpload"
+        app:layout_constraintTop_toBottomOf="@+id/btnFileUpload" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

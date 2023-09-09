@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.questans">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".application.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QuestAns"
+        android:usesCleartextTraffic="true">
+        <service
+            android:name=".service.RescheduleService"
+            android:enabled="true"></service>
+        <service
+            android:name=".service.ScheduleService"
+            android:enabled="true"></service>
+
+        <receiver
+            android:name=".broadcastreceiver.ScheduleBroadcastReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.DocContributionActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.main.MainActivity"/>
+        <activity
+            android:name=".activity.SearchActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.main.MainActivity"/>
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.main.StartScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.result.UserTestResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.login_signup.SignupActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.login_signup.LoginActivity"/>
+        <activity
+            android:name=".activity.login_signup.LoginActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.main.MainActivity"/>
+        <activity
+            android:name=".activity.subject.ChapterActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.subject.SubjectActivity"/>
+        <activity
+            android:name=".activity.subject.SubjectActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.main.MainActivity"/>
+        <activity
+            android:name=".activity.result.TestResultActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.subject.SubjectActivity"/>
+        <activity
+            android:name=".activity.testform.TestFormActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.subject.SubjectActivity"/>
+        <activity
+            android:name=".activity.main.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.schedule.ScheduleActivity"
+            android:exported="false"
+            android:parentActivityName=".activity.main.MainActivity"/>
+    </application>
+
+</manifest>

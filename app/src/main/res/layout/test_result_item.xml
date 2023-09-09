@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/table_border">
+
+    <TextView
+        android:id="@+id/txtTenKT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="TenBaiKT"
+        app:layout_constraintEnd_toStartOf="@+id/btnChitiet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDiemso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Diemso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTenKT" />
+
+    <TextView
+        android:id="@+id/txtThoigian"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Thoi gian"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/btnChitiet"
+        app:layout_constraintStart_toEndOf="@+id/txtDiemso"
+        app:layout_constraintBottom_toBottomOf="@+id/txtDiemso" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:textSize="14dp"
+        android:textStyle="italic"
+        android:textAlignment="viewEnd"
+        android:text="Date"
+        app:layout_constraintEnd_toStartOf="@+id/btnChitiet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDiemso" />
+
+    <Button
+        android:id="@+id/btnChitiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Chi tiết"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
